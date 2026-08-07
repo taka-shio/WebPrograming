@@ -1,0 +1,56 @@
+.card {
+  display: grid;
+  gap: 0.875rem;
+}
+
+.imageFrame {
+  aspect-ratio: 77 / 75;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.body {
+  display: grid;
+  gap: 0.125rem;
+  justify-items: start;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-surface);
+}
+
+.category {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 2.1;
+  color: var(--color-header-text);
+}
+
+@media (max-width: 768px) {
+  .body {
+    gap: 0.25rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .category {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}

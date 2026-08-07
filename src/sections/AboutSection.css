@@ -1,0 +1,107 @@
+.about-section {
+  background: var(--color-hero-bg);
+  color: var(--color-surface);
+}
+
+.about-section__inner {
+  width: min(100%, var(--page-max-width));
+  margin: 0 auto;
+  padding-block: clamp(5rem, 9vw, 6.5625rem) clamp(4rem, 8vw, 6.5rem);
+  padding-inline: clamp(1.5rem, 7.2vw, 5.75rem);
+}
+
+.about-section__title {
+  text-align: center;
+}
+
+.about-section__content {
+  width: min(100%, 47.5rem);
+  margin: clamp(3.25rem, 6vw, 4.125rem) auto 0;
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.about-section__group {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.about-section__group--closing {
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.about-section__text,
+.about-section__quote-text {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 0.86rem + 0.38vw, 1.25rem);
+  font-weight: 400;
+  line-height: clamp(2.1, 2.6vw, 3);
+  text-align: center;
+  color: var(--color-surface);
+}
+
+.about-section__quote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.about-section__quote-text {
+  letter-spacing: 0.02em;
+}
+
+.about-section__quote-mark {
+  font-family: var(--font-display);
+}
+
+.about-section__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: clamp(2.5rem, 8vw, 8.5rem);
+}
+
+@media (max-width: 1024px) {
+  .about-section__inner {
+    padding-inline: clamp(1.5rem, 6vw, 4rem);
+  }
+
+  .about-section__content {
+    width: min(100%, 42rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section__inner {
+    padding-block: 4.5rem 4rem;
+    padding-inline: 1.5rem;
+  }
+
+  .about-section__content {
+    width: min(100%, 33rem);
+    margin-top: 2.75rem;
+    gap: 2.75rem;
+  }
+
+  .about-section__text,
+  .about-section__quote-text {
+    font-size: 1rem;
+    line-height: 2.35;
+  }
+
+  .about-section__action {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-section__inner {
+    padding-inline: 1.25rem;
+  }
+
+  .about-section__text,
+  .about-section__quote-text {
+    line-height: 2.1;
+  }
+}
